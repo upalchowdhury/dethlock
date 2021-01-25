@@ -1,1 +1,1 @@
-module.exports = ["YourContract"];
+module.exports = ["Accountable","Noun","Ownable","Pausable","SafeMath","Storage","Verb","YourContract"];
