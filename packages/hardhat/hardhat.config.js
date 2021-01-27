@@ -2,6 +2,7 @@ const { utils } = require("ethers");
 const fs = require("fs");
 const chalk = require("chalk");
 
+require("hardhat-deploy-ethers");
 require("@nomiclabs/hardhat-waffle");
 
 const { isAddress, getAddress, formatUnits, parseUnits } = utils;

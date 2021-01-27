@@ -10,7 +10,21 @@ const main = async () => {
   console.log("\n\n 📡 Deploying...\n");
 
 
-  const yourContract = await deploy("YourContract") // <-- add in constructor args like line 16 vvvv
+  const yourContract = await deploy("YourContract");
+  const accountable = await deploy("Accountable"); // <-- add in constructor args like line 16 vvvv
+  const verb = await deploy("Verb");
+  const noun = await deploy("Noun",[verb.address]);
+  const ownable = await deploy("Ownable");
+  const pausable = await deploy("Pausable");
+  const safeMath = await deploy("SafeMath");
+  const storage = await deploy("Storage");
+
+  //  Tokens
+  // const context = await deploy("Context");
+  // const ierc20 = await deploy("IERC20");
+  const dethlockcoin = await deploy("DethlockCoin");
+  const testcoin = await deploy("TestCoin");
+  // const mocoin = await deploy("MoCoin");
 
 
 

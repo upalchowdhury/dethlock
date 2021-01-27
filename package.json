@@ -55,5 +55,9 @@
       "**/@graphprotocol/graph-ts",
       "**/@graphprotocol/graph-ts/**"
     ]
+  },
+  "dependencies": {
+    "ethers": "^5.0.26",
+    "openzeppelin-solidity": "^3.3.0"
   }
 }
