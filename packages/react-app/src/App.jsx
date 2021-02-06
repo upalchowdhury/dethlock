@@ -188,8 +188,8 @@ function App(props) {
 
         <Switch>
           <Route exact path="/">
-            {/*{address === ownerNoun ||*/}
-              {!modo ? (
+            {/* {address === ownerNoun || */}
+            {!modo ? (
               <div>
                 Only owner of contract should see this (admin page)
                 <br />
