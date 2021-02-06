@@ -61,8 +61,8 @@ function App(props) {
   const tx = Transactor(userProvider, gasPrice);
 
   // Faucet Tx can be used to send funds from the faucet
-  // const faucetTx = Transactor(localProvider, gasPrice);
-  // console.log(faucetTx);
+  const faucetTx = Transactor(localProvider, gasPrice);
+  console.log(faucetTx);
 
   // 🏗 scaffold-eth is full of handy hooks like this one to get your balance:
   const yourLocalBalance = useBalance(localProvider, address);
@@ -188,8 +188,8 @@ function App(props) {
 
         <Switch>
           <Route exact path="/">
-            {/*{address === ownerNoun ||*/}
-              {!modo ? (
+            {/* {address === ownerNoun || */}
+            {!modo ? (
               <div>
                 Only owner of contract should see this (admin page)
                 <br />
