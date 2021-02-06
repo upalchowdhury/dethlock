@@ -73,10 +73,11 @@ function Manage(props) {
   };
 
   const QUERY_GQL = gql(queries[query]);
-  const {loading, data} = useQuery(QUERY_GQL, {
+  const { loading, data } = useQuery(QUERY_GQL, {
     variables: { address: props.address.toLowerCase() },
     pollInterval: 10000,
   });
+  console.log(loading);
 
   const willsColumns = [
     {

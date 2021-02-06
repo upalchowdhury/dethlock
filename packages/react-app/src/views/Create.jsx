@@ -7,6 +7,7 @@ import { useQuery, gql } from "@apollo/client";
 import { Address, Balance, AddressInput, TokenInput } from "../components";
 
 const { Option } = Select;
+console.log(Option);
 
 export default function Create({
   address,
@@ -217,6 +218,7 @@ export default function Create({
                   [address, beneficiaries, tokenAddress, deadline],
                 ),
               });
+              console.log(res);
             }}
           >
             Create

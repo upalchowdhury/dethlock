@@ -61,8 +61,8 @@ function App(props) {
   const tx = Transactor(userProvider, gasPrice);
 
   // Faucet Tx can be used to send funds from the faucet
-  // const faucetTx = Transactor(localProvider, gasPrice);
-  // console.log(faucetTx);
+  const faucetTx = Transactor(localProvider, gasPrice);
+  console.log(faucetTx);
 
   // 🏗 scaffold-eth is full of handy hooks like this one to get your balance:
   const yourLocalBalance = useBalance(localProvider, address);
