@@ -15,9 +15,9 @@
     "inputs": [
       {
         "indexed": false,
-        "internalType": "bool",
-        "name": "torchPassed",
-        "type": "bool"
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
       }
     ],
     "name": "OwnershipTransferred",
@@ -81,12 +81,12 @@
   },
   {
     "inputs": [],
-    "name": "_initialized",
+    "name": "_owner",
     "outputs": [
       {
-        "internalType": "bool",
+        "internalType": "address",
         "name": "",
-        "type": "bool"
+        "type": "address"
       }
     ],
     "stateMutability": "view",
