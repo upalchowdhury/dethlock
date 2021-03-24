@@ -3,11 +3,11 @@ schema:
   file: ./src/schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: Noun
+    name: Verb
     network: localhost
     source:
-      address: '{{NounAddress}}'
-      abi: Noun
+      address: '{{YourContractAddress}}'
+      abi: Verb
       startBlock: 1
     mapping:
       kind: ethereum/events
@@ -16,23 +16,9 @@ dataSources:
       entities:
         - Will
       abis:
-        - name: Noun
-          file: ./abis/Noun.json
+        - name: Verb
+          file: ./abis/Verb.json
       eventHandlers:
         - event: NewWillCreated(address,address,address,uint256,uint256,uint256)
-          handler: handleNewWillCreated
-        - event: WillDeFunded(address,uint256,uint256)
-          handler: handleWillDeFunded
-        - event: WillFunded(address,uint256,uint256)
-          handler: handleWillFunded
-        - event: TokensDepositedToWill(address,address,uint256,uint256)
-          handler: handleTokensDepositedToWill
-        - event: TokensWithdrawnFromWill(address,address,uint256,uint256)
-          handler: handleTokensWithdrawnFromWill
-        - event: BenifitedTokens(address,address,uint256,uint256)
-          handler: handleBenifitedTokens
-        - event: BeneficiarySet(uint256,address)
-          handler: handleBeneficiarySet
-        - event: DeadlineUpdated(uint256,uint256,uint256)
-          handler: handleDeadlineUpdated
+          handler: newWill
       file: ./src/mapping.ts

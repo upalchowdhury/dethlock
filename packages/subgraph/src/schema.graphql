@@ -1,11 +1,24 @@
 type Will @entity {
   id: ID!
-  index:BigInt!
   owner: Bytes!
-  value:BigInt
+  value: BigInt
   beneficiary: Bytes!
   deadline: BigInt!
-  token:Bytes
-  tokenBalance:BigInt
+}
+
+
+type Purpose @entity {
+  id: ID!
+  sender: Sender!
+  purpose: String!
+  createdAt: BigInt!
   transactionHash: String!
+}
+
+type Sender @entity {
+  id: ID!
+  address: Bytes!
+  purposes: [Purpose!] @derivedFrom(field: "sender")
+  createdAt: BigInt!
+  purposeCount: BigInt!
 }

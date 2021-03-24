@@ -1,30 +1,23 @@
 import { BigInt, Address } from "@graphprotocol/graph-ts"
 import {
-  Noun,
-  NewWillCreated,
-  WillCreated,
-  WillFunded,
-  WillDeFunded,
-  TokensDepositedToWill,
-  TokensWithdrawnFromWill,
-  BenifitedTokens,
-  BeneficiarySet,
-  DeadlineUpdated
-} from "../generated/Noun/Noun"
+  Verb,
+  NewWillCreated
+  
+} from "../generated/Verb/Verb"
 import { Will } from "../generated/schema"
 
-export function handleNewWillCreated(event: NewWillCreated): void {
+export function newWill(event: NewWillCreated): void {
   let id = event.params.index.minus(BigInt.fromI32(1)).toHexString()
   let will = new Will(id)
 
   will.owner = event.params.owner
   will.beneficiary = event.params.beneficiary
   will.deadline = event.params.deadline
-  will.index = event.params.index
-  will.token = event.params.tokenAddress
+  // will.index = event.params.index
+  // will.token = event.params.tokenAddress
   // will.tokenBalance = 0
   will.value = event.params.value
-  will.transactionHash = event.transaction.hash.toHex()
+  // will.transactionHash = event.transaction.hash.toHex()
   will.save()
 }
 

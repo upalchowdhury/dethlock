@@ -119,10 +119,6 @@ task("wallet", "Create a wallet (pk) link", async (_, { ethers }) => {
   console.log("🔐 WALLET Generated as " + randomWallet.address + "");
   console.log("🔗 http://localhost:3000/pk#" + privateKey);
 });
-<<<<<<< HEAD
-=======
-
->>>>>>> 675b1adffeec0384cced10d4c6f6018600714c24
 task("fundedwallet", "Create a wallet (pk) link and fund it with deployer?")
   .addOptionalParam(
     "amount",
@@ -131,7 +127,6 @@ task("fundedwallet", "Create a wallet (pk) link and fund it with deployer?")
   .addOptionalParam("url", "URL to add pk to")
   // eslint-disable-next-line no-unused-vars
   .setAction(async (taskArgs, { network, ethers }) => {
-<<<<<<< HEAD
     const randomWallet = ethers.Wallet.createRandom()
     const privateKey = randomWallet._signingKey().privateKey
     console.log("🔐 WALLET Generated as " + randomWallet.address + "")
@@ -141,17 +136,6 @@ task("fundedwallet", "Create a wallet (pk) link and fund it with deployer?")
     try{
       localDeployerMnemonic = fs.readFileSync("./mnemonic.txt")
       localDeployerMnemonic = localDeployerMnemonic.toString().trim()
-=======
-    const randomWallet = ethers.Wallet.createRandom();
-    const privateKey = randomWallet._signingKey().privateKey;
-    console.log("🔐 WALLET Generated as " + randomWallet.address + "");
-    const url = taskArgs.url ? taskArgs.url : "http://localhost:3000";
-
-    let localDeployerMnemonic;
-    try {
-      localDeployerMnemonic = fs.readFileSync("./mnemonic.txt");
-      localDeployerMnemonic = localDeployerMnemonic.toString().trim();
->>>>>>> 675b1adffeec0384cced10d4c6f6018600714c24
     } catch (e) {
       /* do nothing - this file isn't always there */
     }
@@ -422,7 +406,6 @@ task("send", "Send ETH")
     debug(JSON.stringify(txRequest, null, 2));
 
     return send(fromSigner, txRequest);
-<<<<<<< HEAD
 });
 
 
@@ -801,6 +784,3 @@ task("send", "Send ETH")
 
 //     return send(fromSigner, txRequest);
 // });
-=======
-  });
->>>>>>> 675b1adffeec0384cced10d4c6f6018600714c24
