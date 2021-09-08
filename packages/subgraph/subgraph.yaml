@@ -1,0 +1,24 @@
+specVersion: 0.0.2
+schema:
+  file: ./src/schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Verb
+    network: localhost
+    source:
+      address: ''
+      abi: Verb
+      startBlock: 1
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Will
+      abis:
+        - name: Verb
+          file: ./abis/Verb.json
+      eventHandlers:
+        - event: NewWillCreated(address,address,address,uint256,uint256,uint256)
+          handler: newWill
+      file: ./src/mapping.ts

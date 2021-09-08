@@ -1,0 +1,586 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1612836749802,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/Verb.sol": {
+      "lastModificationDate": 1612840565389,
+      "contentHash": "da9147500e070c296126e1724f9b056e",
+      "sourceName": "contracts/Verb.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./inherited/DethLock.sol",
+        "./included/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Verb"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/Noun.sol": {
+      "lastModificationDate": 1612840565388,
+      "contentHash": "3920eb0f1bd62bfba42943cf49806de2",
+      "sourceName": "contracts/Noun.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "./inherited/DethLock.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Noun"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/CurlyCoin.sol": {
+      "lastModificationDate": 1612840565388,
+      "contentHash": "8521655baa3642cbd1482f0d50767b5b",
+      "sourceName": "contracts/CurlyCoin.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./included/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "CurlyCoin",
+        "IERC20"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/included/SafeMath.sol": {
+      "lastModificationDate": 1612840565389,
+      "contentHash": "46158bc28300742d8777d12a61a9d37c",
+      "sourceName": "contracts/included/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/inherited/DethLock.sol": {
+      "lastModificationDate": 1612840565389,
+      "contentHash": "a34a830bd6e46b1720eba85b045d768e",
+      "sourceName": "contracts/inherited/DethLock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Accountable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "DethLock"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/inherited/Accountable.sol": {
+      "lastModificationDate": 1612840565389,
+      "contentHash": "1e2acc237828d340ea12f224525cb82f",
+      "sourceName": "contracts/inherited/Accountable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Pausable.sol",
+        "../included/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Accountable"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/inherited/Pausable.sol": {
+      "lastModificationDate": 1612840565390,
+      "contentHash": "f926205e685f0e7ec57991a27e475870",
+      "sourceName": "contracts/inherited/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/inherited/Ownable.sol": {
+      "lastModificationDate": 1612840565390,
+      "contentHash": "2fbba9a0d981d36f41cc4325a22f1635",
+      "sourceName": "contracts/inherited/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "./Storage.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/inherited/Storage.sol": {
+      "lastModificationDate": 1612840565390,
+      "contentHash": "0d92293e83ef7891ef7db02936a4629d",
+      "sourceName": "contracts/inherited/Storage.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Storage"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/inherited/Mintable.sol": {
+      "lastModificationDate": 1612840565389,
+      "contentHash": "5da377317faef3a16ededd37af81aaba",
+      "sourceName": "contracts/inherited/Mintable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "./Accountable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Mintable"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/inherited/Mortal.sol": {
+      "lastModificationDate": 1612840565390,
+      "contentHash": "f2f889119b574951849a1642de82c651",
+      "sourceName": "contracts/inherited/Mortal.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Pausable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Mortal"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/inherited/Nameable.sol": {
+      "lastModificationDate": 1612840565390,
+      "contentHash": "ca586a382ada18d422eaea9447850893",
+      "sourceName": "contracts/inherited/Nameable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Nameable"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/inherited/Divisible.sol": {
+      "lastModificationDate": 1612840565389,
+      "contentHash": "dfa4786429cba4ad79fe217fe8cd4c57",
+      "sourceName": "contracts/inherited/Divisible.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "./Storage.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "Divisible"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/MoCoin.sol": {
+      "lastModificationDate": 1612840565388,
+      "contentHash": "36fb6490e70d4167c20fab05df2c7fcf",
+      "sourceName": "contracts/MoCoin.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./included/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "IERC20",
+        "MoCoin"
+      ]
+    },
+    "/Users/upalc/Documents/ethglobal/project/dethLockapp/packages/hardhat/contracts/LarryCoin.sol": {
+      "lastModificationDate": 1612840565388,
+      "contentHash": "730598e37b27fc36366dd1343ce72c06",
+      "sourceName": "contracts/LarryCoin.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./included/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "IERC20",
+        "LarryCoin"
+      ]
+    }
+  }
+}

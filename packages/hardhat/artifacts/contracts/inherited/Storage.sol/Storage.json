@@ -1,0 +1,16 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Storage",
+  "sourceName": "contracts/inherited/Storage.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50600080604051601d906041565b908152604051908190036020019020805491151560ff199092169190911790556058565b6a1a5b9a5d1a585b1a5e995960aa1b8152600b0190565b603f8060656000396000f3fe6080604052600080fdfea264697066735822122074aa5e14eb0f53b843bc21417b0e94d572ca77a0ccab9f3de8727e2cfe88276f64736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122074aa5e14eb0f53b843bc21417b0e94d572ca77a0ccab9f3de8727e2cfe88276f64736f6c63430008000033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
